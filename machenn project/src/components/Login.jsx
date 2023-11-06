@@ -44,7 +44,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8080/auth/login",
+        "https://prickly-hare-lingerie.cyclic.app/auth/login",
         {
           email: email,
           password: password,

@@ -37,7 +37,7 @@ const UserTable = () => {
     };
 
     let usersData = axios
-      .get("http://localhost:8080/admin/users", { headers })
+      .get("https://prickly-hare-lingerie.cyclic.app/admin/users", { headers })
       .then((response) => {
         let res = response.data;
         setUsers(res);
@@ -58,7 +58,7 @@ const UserTable = () => {
     };
 
     let usersData = axios
-      .delete(`http://localhost:8080/admin/users/${item._id}`, { headers })
+      .delete(`https://prickly-hare-lingerie.cyclic.app/admin/users/${item._id}`, { headers })
       .then((response) => {
         let res = response.data;
         onClose();

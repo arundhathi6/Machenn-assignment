@@ -52,7 +52,7 @@ export const UpdateForm = () => {
       };
 
       const { data } = await axios.patch(
-        `http://localhost:8080/admin/users/${id}`,
+        `https://prickly-hare-lingerie.cyclic.app/admin/users/${id}`,
         {
           username: name,
           email: email,
@@ -89,7 +89,7 @@ export const UpdateForm = () => {
     };
 
     let usersData = axios
-      .get(`http://localhost:8080/admin/users/${id}`, { headers })
+      .get(`https://prickly-hare-lingerie.cyclic.app/admin/users/${id}`, { headers })
       .then((response) => {
         let res = response.data;
         setName(res.username);
